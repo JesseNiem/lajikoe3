@@ -85,7 +85,7 @@ const imageUrls = {
     "marjalude": "https://www.otokkatieto.fi/uploads/fullscreen/marjalude.jpg",    "mehiläinen": "https://activepestcontrol.com/wp-content/uploads/2018/11/honey-bee.jpg",
     "metsäsittiäinen": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Anoplotrupes.stercorosus.jpg",
     "metsätorakka": "https://www.otokkatieto.fi/uploads/fullscreen/metsatorakka.jpg",
-    "muurahainen": "https://upload.wikimedia.org/wikipedia/commons/d/db/Red_Ant_-_March_2025.jpg",
+    "muurahainen": "https://entomologytoday.org/wp-content/uploads/2024/09/formica-aserva.jpeg",
     "mäkäräinen": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Blackfly.jpg",
     "neidonkorento": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Beautiful_demoiselle_%28Calopteryx_virgo%29_male_3.jpg",
     "polttiainen": "https://suomenluonto.fi/wp-content/uploads/2021/06/polttiainen.jpg",
