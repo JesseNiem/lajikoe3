@@ -1,0 +1,72 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #282c34; /* Dark background */
+    color: #f8f8f2; /* Light text */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #61dafb; /* Light blue for contrast */
+    margin-bottom: 10px;
+}
+
+#score {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #3a3f4b; /* Slightly lighter dark gray */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adjusted shadow for dark theme */
+}
+
+#species-image {
+    max-width: 50%; /* Make image 50% smaller */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 4px;
+}
+
+#options-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Side-by-side */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow options to wrap on smaller screens */
+}
+
+.option {
+    display: block;
+    width: auto; /* Allow buttons to size based on content */
+    min-width: 150px; /* Minimum width for readability */
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb; /* Light blue for buttons */
+    color: #282c34; /* Dark text on buttons */
+    font-size: 1.1em; /* Slightly larger font for readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #21a1f1; /* Darker blue on hover */
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
