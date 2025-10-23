@@ -92,7 +92,7 @@ const imageUrls = {
     "punkki": "https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/article_thumbnails/BigBead/1800x1200_what_are_ticks_and_what_diseases_do_they_spread_bigbead.jpg",
     "päiväkorento": "https://writingnearthelake.org/wp-content/uploads/2021/08/mayfly-on-my-siding-1.jpg",
     "raatokärpänen": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Sarcophaga_Bercaea2.jpg",
-    "sarvijaakko": "https://ptes.org/wp-content/uploads/2019/06/A-Silver-male-stag-beetle-header-PTES-great-stag-hunt-2019-e1561475715269.jpg",
+    "sarvijaakko": "https://image.laji.fi/MM.268375/Acanthocinus_aedilis_05.jpg",
     "sokkopaarmo": "https://warehouse1.indicia.org.uk/upload/o_1i1kj5l3ffaefublg1r7l1a108.jpeg",
     "sudenkorento": "https://pestie.com/pest-illustrations/700-FBFBFB/dragonfly.jpg",
     "suppupaarma": "https://image.laji.fi/MM.155141/AA_100714_X56_185548_Haem_pluv_Homo_sapi_large.jpg",
