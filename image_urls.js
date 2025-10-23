@@ -79,7 +79,7 @@ const imageUrls = {
     "hämähäkki": "https://upload.wikimedia.org/wikipedia/commons/2/26/Araneae3.jpg",
     "suruvaippa": "https://upload.wikimedia.org/wikipedia/commons/9/99/The_Mourning_Cloak_%2823369139485%29.jpg",
     "kimalainen": "https://www.extermpro.com/wp-content/uploads/2019/12/bumble-bee-1080x1080.jpg",
-    "sinisiipi": "https://npr.brightspotcdn.com/ad/8b/eff73f8347019623aa5a3a70562e/istock-1435078652.jpg",
+    "sinisiipi": "https://www.suomen-perhoset.fi/wp-content/uploads/2024/05/Kannussinisiipi-hero4.jpg",
     "koskikorento": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Pteronarcyidae_a.JPG",
     "maakiitäjäinen": "https://eorganic.org/sites/eorganic.info/files/u461/Ground%20Beetle%20article%20fig%202.png",
     "marjalude": "https://www.otokkatieto.fi/uploads/fullscreen/marjalude.jpg",    "mehiläinen": "https://activepestcontrol.com/wp-content/uploads/2018/11/honey-bee.jpg",
