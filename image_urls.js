@@ -84,7 +84,7 @@ const imageUrls = {
     "maakiitäjäinen": "https://eorganic.org/sites/eorganic.info/files/u461/Ground%20Beetle%20article%20fig%202.png",
     "marjalude": "https://hips.hearstapps.com/hmg-prod/images/chiggers-1588598413.png?crop=0.9427083333333334xw:1xh;center,top&resize=1200:*",
     "mehiläinen": "https://activepestcontrol.com/wp-content/uploads/2018/11/honey-bee.jpg",
-    "metsäsittiäinen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/A_Formica_rufa_sideview.jpg/1200px-A_Formica_rufa_sideview.jpg",
+    "metsäsittiäinen": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Anoplotrupes.stercorosus.jpg",
     "metsätorakka": "https://www.otokkatieto.fi/uploads/fullscreen/metsatorakka.jpg",
     "muurahainen": "https://upload.wikimedia.org/wikipedia/commons/d/db/Red_Ant_-_March_2025.jpg",
     "mäkäräinen": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Blackfly.jpg",
