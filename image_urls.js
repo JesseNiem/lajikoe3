@@ -9,7 +9,7 @@ const imageUrls = {
     "kangastatti": "https://honest-food.net/wp-content/uploads/2023/08/young-birch-bolete-mn.jpg",
     "punikkitatit": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Leccinum_aurantiacum.jpg",
     "voitatti": "https://www.milkwood.net/wp-content/uploads/2012/05/1205-slippery-jacks-09.jpg",
-    "haaparousku": "https://www.first-nature.com/fungi/images/russulaceae/lactarius-torminosus6.jpg",
+    "haaparousku": "https://www.arktisetaromit.fi/binary/file/-/fid/34/",
     "kangaspalsamirousku": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Lact.ruf.jpg",
     "kangasrousku": "https://mycology.su/wp-content/uploads/2018/04/Lactarius-rufus-2014-09-10-IMG_4416-Tatiana-Bulyonkova.jpg",
     "karvarousku": "https://www.arktisetaromit.fi/binary/file/-/fid/3310",
