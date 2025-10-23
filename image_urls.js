@@ -72,7 +72,7 @@ const imageUrls = {
     "sammakko": "https://upload.wikimedia.org/wikipedia/commons/3/39/European_Common_Frog_Rana_temporaria.jpg",
     "ampiainen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Vespula_germanica_Richard_Bartz.jpg/960px-Vespula_germanica_Richard_Bartz.jpg",
     "heinäsirkka": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Chorthippus_parallelus.jpg",
-    "hepokatti": "https://upload.wikimedia.org/wikipedia/commons/8/85/Tettigonia_viridissima_qtl2.jpg",
+    "hepokatti": "https://kotiliesi.fi/wp-content/uploads/2017/08/hepokatti2_kotiliesi.jpg",
     "hirvikärpänen": "https://www.luke.fi/sites/default/files/styles/wide/public/2022-09/hirvik%C3%A4rp%C3%A4nen.webp?itok=2Zp7MHpk",
     "huonekärpänen": "https://upload.wikimedia.org/wikipedia/commons/1/14/Common_house_fly%2C_Musca_domestica.jpg",
     "hyttynen (sääski)": "https://images-bonnier.imgix.net/files/ill/production/2020/07/16144913/hyttynen.jpg?auto=format,compress&crop=focalpoint&fp-x=0.5&fp-y=0.5&ar=1.4435695538057742:1&w=768&q=80&fit=crop",
