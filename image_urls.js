@@ -32,7 +32,7 @@ const imageUrls = {
     "suippumyrkkyseitikki": "https://www.wildfooduk.com/wp-content/uploads/2022/03/Deadly-Webcap-3.jpg",
     "pakurikääpä": "https://swallowtail.ca/wp-content/uploads/sites/5751/2019/07/Inonotus-obliquus-chaga.jpg?w=700&h=700&zoom=2",
     "taulakääpä": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Fomes_fomentarius_2010_G2.jpg",
-    "pökkelökääpä": "https://upload.wikimedia.org/wikipedia/commons/5/50/Piptoporus_betulinus_55.jpg",
+    "pökkelökääpä": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Piptoporus_betulinus11.JPG/1280px-Piptoporus_betulinus11.JPG",
     "kantokääpä": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Fomitopsis_pinicola_109142.jpg",
     "arinakääpä": "https://www.first-nature.com/fungi/images/hymenochaetaceae/phellinus-igniarius2.jpg",
     "naava": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Usnea_cavernosa_-_Flickr_-_pellaea.jpg",
@@ -100,6 +100,6 @@ const imageUrls = {
     "surviaissääski": "https://content.ces.ncsu.edu/media/images/chironomid.jpg",
     "tukkimiehentäi": "https://www.monstertreeservice.com/images/GettyImages-1154695306.1).jpg",
     "turkkilo": "https://www.nhm.ac.uk/content/dam/nhm-www/take-part/identify-nature/pest-species/attagenus-smirnovi-brown-carpet-beetle-two-column.jpg",
-    "vesiperhonen": "https://warehouse1.indicia.org.uk/upload/12/92/96/Water%20Veneer%20(Acentria%20ephemerella)%20Harecroft%20Crescent%20Sapcote%20SP49019371%20(taken%2018.7.2010)..JPG",
+    "vesiperhonen": "https://suomenluonto.fi/wp-content/uploads/2017/11/IMG_7253-1600x996.jpg",
     "ritariperhonen": "https://upload.wikimedia.org/wikipedia/commons/8/8e/PapilioMachaon2016_001.JPG"
 };
