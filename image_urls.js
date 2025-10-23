@@ -82,8 +82,7 @@ const imageUrls = {
     "sinisiipi": "https://npr.brightspotcdn.com/ad/8b/eff73f8347019623aa5a3a70562e/istock-1435078652.jpg",
     "koskikorento": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Pteronarcyidae_a.JPG",
     "maakiitäjäinen": "https://eorganic.org/sites/eorganic.info/files/u461/Ground%20Beetle%20article%20fig%202.png",
-    "marjalude": "https://hips.hearstapps.com/hmg-prod/images/chiggers-1588598413.png?crop=0.9427083333333334xw:1xh;center,top&resize=1200:*",
-    "mehiläinen": "https://activepestcontrol.com/wp-content/uploads/2018/11/honey-bee.jpg",
+    "marjalude": "https://www.otokkatieto.fi/uploads/fullscreen/marjalude.jpg",    "mehiläinen": "https://activepestcontrol.com/wp-content/uploads/2018/11/honey-bee.jpg",
     "metsäsittiäinen": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Anoplotrupes.stercorosus.jpg",
     "metsätorakka": "https://www.otokkatieto.fi/uploads/fullscreen/metsatorakka.jpg",
     "muurahainen": "https://upload.wikimedia.org/wikipedia/commons/d/db/Red_Ant_-_March_2025.jpg",
@@ -99,7 +98,7 @@ const imageUrls = {
     "suppupaarma": "https://image.laji.fi/MM.155141/AA_100714_X56_185548_Haem_pluv_Homo_sapi_large.jpg",
     "surviaissääski": "https://content.ces.ncsu.edu/media/images/chironomid.jpg",
     "tukkimiehentäi": "https://www.monstertreeservice.com/images/GettyImages-1154695306.1).jpg",
-    "turkkilo": "https://www.nhm.ac.uk/content/dam/nhm-www/take-part/identify-nature/pest-species/attagenus-smirnovi-brown-carpet-beetle-two-column.jpg",
+    "turkkilo": "https://suomenluonto.fi/wp-content/uploads/2022/11/tutkijaturkkilo-tapio-kujala-1000x697.jpg",
     "vesiperhonen": "https://suomenluonto.fi/wp-content/uploads/2017/11/IMG_7253-1600x996.jpg",
     "ritariperhonen": "https://upload.wikimedia.org/wikipedia/commons/8/8e/PapilioMachaon2016_001.JPG"
 };
