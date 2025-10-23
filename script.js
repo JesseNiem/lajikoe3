@@ -107,7 +107,7 @@ const speciesData = {
         "päiväkorento",
         "raatokärpänen",
         "sarvijaakko",
-        "sokkopaarmo",
+        "sokkopaarma",
         "sudenkorento",
         "suppupaarma",
         "surviaissääski",

@@ -93,7 +93,7 @@ const imageUrls = {
     "päiväkorento": "https://writingnearthelake.org/wp-content/uploads/2021/08/mayfly-on-my-siding-1.jpg",
     "raatokärpänen": "https://suomenluonto.fi/wp-content/uploads/readers_images/2021/08/6-2000x1333.jpg",
     "sarvijaakko": "https://image.laji.fi/MM.268375/Acanthocinus_aedilis_05.jpg",
-    "sokkopaarmo": "https://warehouse1.indicia.org.uk/upload/o_1i1kj5l3ffaefublg1r7l1a108.jpeg",
+    "sokkopaarma": "https://warehouse1.indicia.org.uk/upload/o_1i1kj5l3ffaefublg1r7l1a108.jpeg",
     "sudenkorento": "https://pestie.com/pest-illustrations/700-FBFBFB/dragonfly.jpg",
     "suppupaarma": "https://image.laji.fi/MM.155141/AA_100714_X56_185548_Haem_pluv_Homo_sapi_large.jpg",
     "surviaissääski": "https://content.ces.ncsu.edu/media/images/chironomid.jpg",
