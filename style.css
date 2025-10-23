@@ -30,7 +30,8 @@ h1 {
 }
 
 #species-image {
-    max-width: 50%; /* Make image 50% smaller */
+    max-width: 500px; /* Set max width to 500px */
+    max-height: 500px; /* Set max height to 500px */
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
