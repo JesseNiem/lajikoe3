@@ -14,7 +14,6 @@ const speciesData = {
         "voitatti",
         "haaparousku",
         "kangaspalsamirousku",
-        "kangasrousku",
         "karvarousku",
         "leppärousku",
         "isohapero",
@@ -88,7 +87,7 @@ const speciesData = {
         "hepokatti",
         "hirvikärpänen",
         "huonekärpänen",
-        "hyttynen (sääski)",
+        "hyttynen",
         "hämähäkki",
         "suruvaippa",
         "kimalainen",
@@ -124,6 +123,7 @@ const optionsContainerEl = document.getElementById("options-container");
 const feedbackEl = document.getElementById("feedback");
 const searchInput = document.getElementById("species-search");
 const suggestionsContainer = document.getElementById("suggestions-container");
+const categorySelect = document.getElementById("category-select");
 
 let score = 0;
 let currentSpecies;
@@ -131,8 +131,28 @@ let correctSpecies;
 let incorrectlyAnsweredSpecies = []; // Stores species answered incorrectly
 let unansweredSpecies = []; // Stores all species not yet answered correctly
 
-function initializeUnansweredSpecies() {
+function populateCategories() {
     for (const category in speciesData) {
+        const option = document.createElement("option");
+        option.value = category;
+        option.textContent = category;
+        categorySelect.appendChild(option);
+    }
+}
+
+function initializeUnansweredSpecies(category = "all") {
+    unansweredSpecies = [];
+    incorrectlyAnsweredSpecies = []; // Clear incorrectly answered when category changes
+    score = 0; // Reset score
+    scoreEl.textContent = `Pisteet: ${score}`;
+
+    if (category === "all") {
+        for (const cat in speciesData) {
+            speciesData[cat].forEach(species => {
+                unansweredSpecies.push(species);
+            });
+        }
+    } else {
         speciesData[category].forEach(species => {
             unansweredSpecies.push(species);
         });
@@ -141,10 +161,15 @@ function initializeUnansweredSpecies() {
 }
 
 function startGame() {
+    populateCategories();
     initializeUnansweredSpecies();
     nextRound();
     searchInput.addEventListener("input", handleSearchInput);
-    imageEl.addEventListener("click", showOptions); // Re-add event listener
+    imageEl.addEventListener("click", showOptions);
+    categorySelect.addEventListener("change", (event) => {
+        initializeUnansweredSpecies(event.target.value);
+        nextRound();
+    });
 }
 
 function showOptions() {
@@ -157,7 +182,7 @@ function nextRound() {
     feedbackEl.textContent = ""; // Clear feedback
 
     let speciesToAsk;
-    let speciesListForOptions;
+    let speciesListForOptions = [];
 
     if (unansweredSpecies.length > 0) {
         // Prioritize new questions
@@ -174,11 +199,16 @@ function nextRound() {
     }
 
     // Find the category for the speciesToAsk to generate options from the same category
-    for (const category in speciesData) {
-        if (speciesData[category].includes(speciesToAsk)) {
-            speciesListForOptions = speciesData[category];
-            break;
+    const selectedCategory = categorySelect.value;
+    if (selectedCategory === "all") {
+        for (const category in speciesData) {
+            if (speciesData[category].includes(speciesToAsk)) {
+                speciesListForOptions = speciesData[category];
+                break;
+            }
         }
+    } else {
+        speciesListForOptions = speciesData[selectedCategory];
     }
 
     correctSpecies = speciesToAsk;
@@ -210,16 +240,22 @@ function showSpecificSpecies(speciesName) {
     optionsContainerEl.style.display = "none"; // Hide options initially
     feedbackEl.textContent = "";
 
-    let speciesListForOptions;
-    for (const category in speciesData) {
-        if (speciesData[category].includes(speciesName)) {
-            speciesListForOptions = speciesData[category];
-            break;
+    let speciesListForOptions = [];
+    const selectedCategory = categorySelect.value;
+
+    if (selectedCategory === "all") {
+        for (const category in speciesData) {
+            if (speciesData[category].includes(speciesName)) {
+                speciesListForOptions = speciesData[category];
+                break;
+            }
         }
+    } else {
+        speciesListForOptions = speciesData[selectedCategory];
     }
 
-    if (!speciesListForOptions) {
-        console.error("Species not found:", speciesName);
+    if (!speciesListForOptions || !speciesListForOptions.includes(speciesName)) {
+        console.error("Species not found in selected category:", speciesName);
         return;
     }
 
@@ -254,7 +290,15 @@ function handleSearchInput() {
         return;
     }
 
-    const allSpecies = Object.values(speciesData).flat();
+    let allSpecies = [];
+    const selectedCategory = categorySelect.value;
+
+    if (selectedCategory === "all") {
+        allSpecies = Object.values(speciesData).flat();
+    } else {
+        allSpecies = speciesData[selectedCategory];
+    }
+
     const filteredSpecies = allSpecies.filter(species =>
         species.toLowerCase().startsWith(query)
     );

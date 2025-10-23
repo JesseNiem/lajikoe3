@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head><body>
     <h1>LAAT25 Lajiharjoitus 3</h1>
-    <div id="search-container">
-        <label for="species-search">Näytä laji:</label>
+            <div id="category-selection">
+                <label for="category-select">Valitse kategoria:</label>
+                <select id="category-select">
+                    <option value="all">Kaikki lajit</option>
+                </select>
+            </div>
+            <div id="search-container">        <label for="species-search">Näytä laji:</label>
         <input type="text" id="species-search" placeholder="Aloita kirjoittamaan lajin nimeä...">
         <div id="suggestions-container"></div>
     </div>

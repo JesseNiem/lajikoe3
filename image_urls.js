@@ -15,7 +15,7 @@ const imageUrls = {
     "karvarousku": "https://www.arktisetaromit.fi/binary/file/-/fid/3310",
     "leppärousku": "https://upload.wikimedia.org/wikipedia/commons/8/89/Lactarius_deliciosus.jpg",
     "isohapero": "https://www.mushroom.world/data/fungi/Russulapaludosa1.jpg",
-    "kangashapero": "https://www.first-nature.com/fungi/images/russulaceae/russula-cyanoxantha4.jpg",
+    "kangashapero": "https://www.martat.fi/wp-content/uploads/2017/09/kangashapero_kuva_sieni.jpg",
     "keltahapero": "https://upload.wikimedia.org/wikipedia/commons/9/95/2010-08-11_Russula_claroflava_Grove._ss._Melz%2C_%26_Zv.%2C_J._Schff_98988.jpg",
     "viinihapero": "https://www.arktisetaromit.fi/binary/file/-/fid/3318",
     "mustavahakas": "https://www.mushroom.world/data/fungi/Hygrophoruscamarophyllus2.jpg",
