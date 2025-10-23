@@ -75,7 +75,7 @@ const imageUrls = {
     "hepokatti": "https://upload.wikimedia.org/wikipedia/commons/8/85/Tettigonia_viridissima_qtl2.jpg",
     "hirvikärpänen": "https://www.luke.fi/sites/default/files/styles/wide/public/2022-09/hirvik%C3%A4rp%C3%A4nen.webp?itok=2Zp7MHpk",
     "huonekärpänen": "https://upload.wikimedia.org/wikipedia/commons/1/14/Common_house_fly%2C_Musca_domestica.jpg",
-    "hyttynen (sääski)": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aedes_aegypti.jpg/1200px-Aedes_aegypti.jpg",
+    "hyttynen (sääski)": "https://images-bonnier.imgix.net/files/ill/production/2020/07/16144913/hyttynen.jpg?auto=format,compress&crop=focalpoint&fp-x=0.5&fp-y=0.5&ar=1.4435695538057742:1&w=768&q=80&fit=crop",
     "hämähäkki": "https://upload.wikimedia.org/wikipedia/commons/2/26/Araneae3.jpg",
     "suruvaippa": "https://upload.wikimedia.org/wikipedia/commons/9/99/The_Mourning_Cloak_%2823369139485%29.jpg",
     "kimalainen": "https://www.extermpro.com/wp-content/uploads/2019/12/bumble-bee-1080x1080.jpg",
