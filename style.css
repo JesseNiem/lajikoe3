@@ -40,7 +40,7 @@ h1 {
 
 #options-container {
     margin-top: 20px;
-    display: flex;
+    display: none; /* Hidden by default */
     flex-direction: row; /* Side-by-side */
     justify-content: center;
     flex-wrap: wrap; /* Allow options to wrap on smaller screens */

@@ -144,10 +144,16 @@ function startGame() {
     initializeUnansweredSpecies();
     nextRound();
     searchInput.addEventListener("input", handleSearchInput);
+    imageEl.addEventListener("click", showOptions); // Re-add event listener
+}
+
+function showOptions() {
+    optionsContainerEl.style.display = "flex"; // Show options
 }
 
 function nextRound() {
     optionsContainerEl.innerHTML = "";
+    optionsContainerEl.style.display = "none"; // Hide options initially
     feedbackEl.textContent = ""; // Clear feedback
 
     let speciesToAsk;
@@ -201,6 +207,7 @@ function nextRound() {
 
 function showSpecificSpecies(speciesName) {
     optionsContainerEl.innerHTML = "";
+    optionsContainerEl.style.display = "none"; // Hide options initially
     feedbackEl.textContent = "";
 
     let speciesListForOptions;
