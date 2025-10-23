@@ -13,7 +13,7 @@ const imageUrls = {
     "kangaspalsamirousku": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Lact.ruf.jpg",
     "kanga srousku": "https://upload.wikimedia.org/wikipedia/commons/1/13/2007-07-09_Lactarius_quietus_2.jpg",
     "karvarousku": "https://www.first-nature.com/fungi/images/russulaceae/lactarius-pubescens1.jpg",
-    "leppärousku": "https://www.texasmushrooms.org/asergeev/pictures/archives/2020/2685/jpeg/10b.jpg",
+    "leppärousku": "https://upload.wikimedia.org/wikipedia/commons/8/89/Lactarius_deliciosus.jpg",
     "isohapero": "https://www.mushroom.world/data/fungi/Russulapaludosa1.jpg",
     "kangashapero": "https://www.first-nature.com/fungi/images/russulaceae/russula-cyanoxantha4.jpg",
     "keltahapero": "https://upload.wikimedia.org/wikipedia/commons/9/95/2010-08-11_Russula_claroflava_Grove._ss._Melz%2C_%26_Zv.%2C_J._Schff_98988.jpg",
