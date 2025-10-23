@@ -1,4 +1,3 @@
-
 const speciesData = {
     "Sammalet": [
         "karhunsammal",
@@ -29,11 +28,6 @@ const speciesData = {
         "suppilovahvero",
         "mustatorvisieni",
         "lampaankääpä",
-        "vaaleaorakas",
-        "korvasieni",
-        "huhtasieni",
-        "tuoksuvalmuska l. matsutake",
-        "punavyöseitikki",
         "punainen kärpässieni",
         "pulkkosieni",
         "valkoinen kärpässieni",
@@ -128,6 +122,8 @@ const scoreEl = document.getElementById("score");
 const imageEl = document.getElementById("species-image");
 const optionsContainerEl = document.getElementById("options-container");
 const feedbackEl = document.getElementById("feedback");
+const searchInput = document.getElementById("species-search");
+const suggestionsContainer = document.getElementById("suggestions-container");
 
 let score = 0;
 let currentSpecies;
@@ -147,6 +143,7 @@ function initializeUnansweredSpecies() {
 function startGame() {
     initializeUnansweredSpecies();
     nextRound();
+    searchInput.addEventListener("input", handleSearchInput);
 }
 
 function nextRound() {
@@ -199,6 +196,72 @@ function nextRound() {
         button.classList.add("option");
         button.addEventListener("click", () => checkAnswer(option));
         optionsContainerEl.appendChild(button);
+    });
+}
+
+function showSpecificSpecies(speciesName) {
+    optionsContainerEl.innerHTML = "";
+    feedbackEl.textContent = "";
+
+    let speciesListForOptions;
+    for (const category in speciesData) {
+        if (speciesData[category].includes(speciesName)) {
+            speciesListForOptions = speciesData[category];
+            break;
+        }
+    }
+
+    if (!speciesListForOptions) {
+        console.error("Species not found:", speciesName);
+        return;
+    }
+
+    correctSpecies = speciesName;
+    imageEl.src = imageUrls[correctSpecies];
+    imageEl.alt = correctSpecies;
+
+    const options = [correctSpecies];
+    while (options.length < 3) {
+        const randomSpecies = speciesListForOptions[Math.floor(Math.random() * speciesListForOptions.length)];
+        if (!options.includes(randomSpecies)) {
+            options.push(randomSpecies);
+        }
+    }
+
+    shuffleArray(options);
+
+    options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.classList.add("option");
+        button.addEventListener("click", () => checkAnswer(option));
+        optionsContainerEl.appendChild(button);
+    });
+}
+
+function handleSearchInput() {
+    const query = searchInput.value.toLowerCase();
+    suggestionsContainer.innerHTML = "";
+
+    if (query.length < 2) {
+        return;
+    }
+
+    const allSpecies = Object.values(speciesData).flat();
+    const filteredSpecies = allSpecies.filter(species =>
+        species.toLowerCase().startsWith(query)
+    );
+
+    filteredSpecies.forEach(species => {
+        const suggestionItem = document.createElement("div");
+        suggestionItem.classList.add("suggestion-item");
+        suggestionItem.textContent = species;
+        suggestionItem.addEventListener("click", () => {
+            searchInput.value = species;
+            suggestionsContainer.innerHTML = "";
+            showSpecificSpecies(species);
+        });
+        suggestionsContainer.appendChild(suggestionItem);
     });
 }
 
