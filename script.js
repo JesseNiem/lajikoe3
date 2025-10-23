@@ -132,9 +132,20 @@ const feedbackEl = document.getElementById("feedback");
 let score = 0;
 let currentSpecies;
 let correctSpecies;
-let incorrectlyAnsweredSpecies = []; // New array to store incorrectly answered species
+let incorrectlyAnsweredSpecies = []; // Stores species answered incorrectly
+let unansweredSpecies = []; // Stores all species not yet answered correctly
+
+function initializeUnansweredSpecies() {
+    for (const category in speciesData) {
+        speciesData[category].forEach(species => {
+            unansweredSpecies.push(species);
+        });
+    }
+    shuffleArray(unansweredSpecies);
+}
 
 function startGame() {
+    initializeUnansweredSpecies();
     nextRound();
 }
 
@@ -143,23 +154,28 @@ function nextRound() {
     feedbackEl.textContent = ""; // Clear feedback
 
     let speciesToAsk;
+    let speciesListForOptions;
 
-    // Decide whether to re-ask an incorrectly answered species or pick a new one
-    if (incorrectlyAnsweredSpecies.length > 0 && Math.random() < 0.3) { // 30% chance to re-ask
+    if (unansweredSpecies.length > 0) {
+        // Prioritize new questions
+        speciesToAsk = unansweredSpecies.pop();
+    } else if (incorrectlyAnsweredSpecies.length > 0) {
+        // If all new questions are done, ask incorrectly answered ones
         const randomIndex = Math.floor(Math.random() * incorrectlyAnsweredSpecies.length);
-        speciesToAsk = incorrectlyAnsweredSpecies[randomIndex];
-        // Find the category for the speciesToAsk
-        for (const category in speciesData) {
-            if (speciesData[category].includes(speciesToAsk)) {
-                currentSpecies = speciesData[category];
-                break;
-            }
-        }
+        speciesToAsk = incorrectlyAnsweredSpecies.splice(randomIndex, 1)[0]; // Remove from incorrectly answered
     } else {
-        const categories = Object.keys(speciesData);
-        const randomCategory = categories[Math.floor(Math.random() * categories.length)];
-        currentSpecies = speciesData[randomCategory];
-        speciesToAsk = currentSpecies[Math.floor(Math.random() * currentSpecies.length)];
+        // Game over, all questions answered correctly
+        feedbackEl.textContent = "Peli ohi! Kaikki lajit arvattu oikein!";
+        feedbackEl.style.color = "#2ecc71";
+        return;
+    }
+
+    // Find the category for the speciesToAsk to generate options from the same category
+    for (const category in speciesData) {
+        if (speciesData[category].includes(speciesToAsk)) {
+            speciesListForOptions = speciesData[category];
+            break;
+        }
     }
 
     correctSpecies = speciesToAsk;
@@ -169,7 +185,7 @@ function nextRound() {
 
     const options = [correctSpecies];
     while (options.length < 3) {
-        const randomSpecies = currentSpecies[Math.floor(Math.random() * currentSpecies.length)];
+        const randomSpecies = speciesListForOptions[Math.floor(Math.random() * speciesListForOptions.length)];
         if (!options.includes(randomSpecies)) {
             options.push(randomSpecies);
         }
@@ -193,7 +209,7 @@ function checkAnswer(selectedOption) {
         feedbackEl.textContent = "OIKEIN!";
         feedbackEl.style.color = "#2ecc71"; // Green for correct
 
-        // If answered correctly, remove from incorrectlyAnsweredSpecies if it was there
+        // If answered correctly, ensure it's not in incorrectlyAnsweredSpecies
         const index = incorrectlyAnsweredSpecies.indexOf(correctSpecies);
         if (index > -1) {
             incorrectlyAnsweredSpecies.splice(index, 1);
