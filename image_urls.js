@@ -47,7 +47,7 @@ const imageUrls = {
     "hauki": "https://upload.wikimedia.org/wikipedia/commons/9/93/Esox_lucius_ZOO_1.jpg",
     "kiiski": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Gymnocephalus_cernuus_P%C3%A4rnu_River_Estonia_2010-01-06.jpg",
     "kirjoeväsimppu": "https://suomenluonto.fi/wp-content/uploads/2023/03/kirjoevasimppu2-1600x711.jpg",
-    "kirjolohi": "https://www.howtocatchanyfish.com/uploads/8/8/0/2/8802125/fixeddsc01695_orig.jpg",
+    "kirjolohi": "https://www.vapaa-ajankalastaja.fi/app/uploads/2024/06/1kirjolohi-1024x343.jpg",
     "kolmipiikki": "https://www.skes.fi/wp-content/uploads/2024/09/kolmipiikki1.jpg",
     "kuha": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sander_lucioperca_1.jpg/1200px-Sander_lucioperca_1.jpg",
     "kymmenpiikki": "https://upload.wikimedia.org/wikipedia/commons/2/22/Pungitius_pungitius.jpg",
