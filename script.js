@@ -13,6 +13,7 @@ const speciesData = {
         "punikkitatit",
         "voitatti",
         "haaparousku",
+        "kangasrousku",
         "kangaspalsamirousku",
         "karvarousku",
         "leppärousku",
@@ -31,7 +32,12 @@ const speciesData = {
         "pulkkosieni",
         "valkoinen kärpässieni",
         "lakritsirousku",
-        "suippumyrkkyseitikki"
+        "suippumyrkkyseitikki",
+        "vaaleaorakas",
+        "korvasieni",
+        "huhtasieni",
+        "tuoksuvalmuska",
+        "punavyöseitikki"
     ],
     "Käävät": [
         "pakurikääpä",
